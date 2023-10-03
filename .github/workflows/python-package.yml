@@ -30,5 +30,13 @@ jobs:
         pip install -r requirements.txt
     - name: Lint with flake8
       run: |
+        stages:
+        - linting
+        
+        flake8:
+        stage: linting
+        image: registry.gitlab.com/pipeline-components/flake8:latest
+        script:
+        - flake8 --verbose
         # stop the build if there are Python syntax errors or undefined names
         flake8 . --count --show-source --statistics
