@@ -4,7 +4,7 @@
 который находится внутри проекта. 
 Дальше для запуска программы напишите команду 'python manage.py runserver' в терминале.
 
-venv: pip install venv
-venv activation: python -m venv venv
-installation of requirements: pip install -r requirements.txt
+venv: pip install venv\
+venv activation: python -m venv venv\
+installation of requirements: pip install -r requirements.txt\
 run command: python manage.py runserver
