@@ -1,6 +1,6 @@
 # ExperimentalProject
 
- ![pipeline status](https://github.com/TekatoKiary/ExperimentalProject/badges/master/pipeline.svg)
+ ![pipeline status](https://github.com/TekatoKiary/ExperimentalProject/badges/main/pipeline.svg)
 
 Перед запуском программы откройте терминал, например, git bash или powershell и перейдите к папке lyceum, 
 который находится внутри проекта. 
