@@ -1,5 +1,7 @@
 # ExperimentalProject
- 
+
+ ![pipeline status](https://github.com/TekatoKiary/ExperimentalProject/badges/master/pipeline.svg)
+
 Перед запуском программы откройте терминал, например, git bash или powershell и перейдите к папке lyceum, 
 который находится внутри проекта. 
 Дальше для запуска программы напишите команду 'python manage.py runserver' в терминале.
