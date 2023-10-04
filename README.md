@@ -1,6 +1,6 @@
 # ExperimentalProject
 
- ![pipeline status](https://github.com/TekatoKiary/ExperimentalProject/actions/workflows/WORKFLOW-FILE/badge.svg)
+ ![pipeline status](https://github.com/TekatoKiary/ExperimentalProject/actions/workflows/.gitlab-ci.yml/badge.svg)
 
 Перед запуском программы откройте терминал, например, git bash или powershell и перейдите к папке lyceum, 
 который находится внутри проекта. 
