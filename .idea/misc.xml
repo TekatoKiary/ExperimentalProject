@@ -2,9 +2,9 @@
 <project version="4">
   <component name="Black">
     <option name="enabledOnReformat" value="true" />
-    <option name="sdkUUID" value="c1b96477-be50-46ec-811e-b80631b4d94f" />
+    <option name="sdkName" value="Python 3.9 (Experimental)" />
   </component>
-  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.9 (ExperimentalProject)" project-jdk-type="Python SDK" />
+  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.9 (Experimental)" project-jdk-type="Python SDK" />
   <component name="PyCharmProfessionalAdvertiser">
     <option name="shown" value="true" />
   </component>
