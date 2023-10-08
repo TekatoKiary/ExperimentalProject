@@ -6,9 +6,9 @@
       <option name="checkSyntaxErrors" value="true" />
       <option name="description" />
       <option name="exitCodeBehavior" value="NEVER" />
-      <option name="fileExtension" value="py" />
+      <option name="fileExtension" value="UNKNOWN" />
       <option name="immediateSync" value="true" />
-      <option name="name" value="flake8-watcher" />
+      <option name="name" value="" />
       <option name="output" value="" />
       <option name="outputFilters">
         <array>
@@ -22,7 +22,7 @@
       <option name="outputFromStdout" value="false" />
       <option name="program" value="$PyInterpreterDirectory$/flake8" />
       <option name="runOnExternalChanges" value="true" />
-      <option name="scopeName" value="Current File" />
+      <option name="scopeName" value="Project Files" />
       <option name="trackOnlyRoot" value="false" />
       <option name="workingDir" value="" />
       <envs />

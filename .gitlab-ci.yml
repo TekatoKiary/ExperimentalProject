@@ -32,3 +32,8 @@ jobs:
       run: |
         # stop the build if there are Python syntax errors or undefined names
         flake8 . --count --show-source --statistics
+    - name: Manage Test
+      run:
+        pip install -r requirements/prod.txt
+        cd lyceum
+        python manage.py test
