@@ -1,0 +1,1589 @@
+[
+{
+  "model": "catalog.category",
+  "pk": 1,
+  "fields": {
+    "name": "Видеоигры",
+    "is_published": true,
+    "slug": "videogames",
+    "normalize_name": "виде0игры",
+    "weight": 100
+  }
+},
+{
+  "model": "catalog.category",
+  "pk": 2,
+  "fields": {
+    "name": "Настольные игры",
+    "is_published": true,
+    "slug": "board_games",
+    "normalize_name": "наст0льные игры",
+    "weight": 100
+  }
+},
+{
+  "model": "catalog.category",
+  "pk": 3,
+  "fields": {
+    "name": "new cate",
+    "is_published": true,
+    "slug": "new_category",
+    "normalize_name": "nеw сате",
+    "weight": 100
+  }
+},
+{
+  "model": "catalog.tag",
+  "pk": 1,
+  "fields": {
+    "name": "Шутер",
+    "is_published": true,
+    "slug": "shooter",
+    "normalize_name": "шутер"
+  }
+},
+{
+  "model": "catalog.tag",
+  "pk": 2,
+  "fields": {
+    "name": "РПГ",
+    "is_published": true,
+    "slug": "RPG",
+    "normalize_name": "рпг"
+  }
+},
+{
+  "model": "catalog.tag",
+  "pk": 3,
+  "fields": {
+    "name": "Стратегия",
+    "is_published": true,
+    "slug": "strategy",
+    "normalize_name": "стратегия"
+  }
+},
+{
+  "model": "catalog.tag",
+  "pk": 4,
+  "fields": {
+    "name": "Приключение",
+    "is_published": true,
+    "slug": "adventure",
+    "normalize_name": "приключение"
+  }
+},
+{
+  "model": "catalog.tag",
+  "pk": 5,
+  "fields": {
+    "name": "Экшен",
+    "is_published": false,
+    "slug": "action",
+    "normalize_name": "экшен"
+  }
+},
+{
+  "model": "catalog.item",
+  "pk": 1,
+  "fields": {
+    "created_time": null,
+    "name": "Fortnite",
+    "is_published": true,
+    "text": "Хорошая игра на тему королевской битвы. На турнирах этой игры можно получить денежное вознаграждение, что очень превосходно.",
+    "category": 1,
+    "main_image": 1,
+    "is_on_main": false,
+    "updated_time": null,
+    "tags": [
+      1
+    ]
+  }
+},
+{
+  "model": "catalog.item",
+  "pk": 2,
+  "fields": {
+    "created_time": null,
+    "name": "Warcraft3: Frozen Throne",
+    "is_published": true,
+    "text": "<p>Шикарная игра на тему стратегии реального времени. Играется просто роскошно.</p>",
+    "category": 1,
+    "main_image": 5,
+    "is_on_main": true,
+    "updated_time": null,
+    "tags": [
+      3
+    ]
+  }
+},
+{
+  "model": "catalog.item",
+  "pk": 3,
+  "fields": {
+    "created_time": null,
+    "name": "Ведьмак3: Дикая Охота",
+    "is_published": true,
+    "text": "Просто 10 из 10. Все на высшем уровне, и играется просто роскошно",
+    "category": 1,
+    "main_image": 3,
+    "is_on_main": true,
+    "updated_time": null,
+    "tags": [
+      4
+    ]
+  }
+},
+{
+  "model": "catalog.item",
+  "pk": 4,
+  "fields": {
+    "created_time": null,
+    "name": "Древний Ужас",
+    "is_published": true,
+    "text": "Роскошно (на самом деле не играл, так что ничего не могу сказать)",
+    "category": 2,
+    "main_image": 2,
+    "is_on_main": true,
+    "updated_time": null,
+    "tags": [
+      2
+    ]
+  }
+},
+{
+  "model": "catalog.item",
+  "pk": 5,
+  "fields": {
+    "created_time": null,
+    "name": "God of War",
+    "is_published": true,
+    "text": "Игра сделанное просто превосходно",
+    "category": 1,
+    "main_image": 4,
+    "is_on_main": true,
+    "updated_time": null,
+    "tags": [
+      5
+    ]
+  }
+},
+{
+  "model": "catalog.item",
+  "pk": 6,
+  "fields": {
+    "created_time": null,
+    "name": "AA",
+    "is_published": true,
+    "text": "<p>Превосходно</p>",
+    "category": 2,
+    "main_image": 6,
+    "is_on_main": true,
+    "updated_time": null,
+    "tags": [
+      2,
+      3,
+      5
+    ]
+  }
+},
+{
+  "model": "catalog.mainimage",
+  "pk": 1,
+  "fields": {
+    "image": "catalog/main_images/1644927302_45-fikiwiki-com-p-fortnait-krasivie-kartinki-46_6DcrP9x.jpg"
+  }
+},
+{
+  "model": "catalog.mainimage",
+  "pk": 2,
+  "fields": {
+    "image": "catalog/main_images/5202.970_qCODsuS.jpg"
+  }
+},
+{
+  "model": "catalog.mainimage",
+  "pk": 3,
+  "fields": {
+    "image": "catalog/main_images/758ba3605c42b85d5462b4c7781b692b_MQOBS79.jpg"
+  }
+},
+{
+  "model": "catalog.mainimage",
+  "pk": 4,
+  "fields": {
+    "image": "catalog/main_images/img_VkDvCbv.jpeg"
+  }
+},
+{
+  "model": "catalog.mainimage",
+  "pk": 5,
+  "fields": {
+    "image": "catalog/main_images/Warcraft_III_The_Frozen_Throne_Cover_bD8AA5F.jpg"
+  }
+},
+{
+  "model": "catalog.mainimage",
+  "pk": 6,
+  "fields": {
+    "image": "catalog/main_images/a4b9d9402abf58405c5a9e5f21a1b48d.jpg"
+  }
+},
+{
+  "model": "catalog.image",
+  "pk": 8,
+  "fields": {
+    "image": "catalog/images/2023/11/03/a4b9d9402abf58405c5a9e5f21a1b48d_3N77cKT.jpg",
+    "item": 6
+  }
+},
+{
+  "model": "catalog.image",
+  "pk": 9,
+  "fields": {
+    "image": "catalog/images/2023/11/03/unnamed.png",
+    "item": 6
+  }
+},
+{
+  "model": "catalog.image",
+  "pk": 10,
+  "fields": {
+    "image": "catalog/images/2023/11/03/unnamed_1.png",
+    "item": 6
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 1,
+  "fields": {
+    "action_time": "2023-10-24T16:44:51.422",
+    "user": 1,
+    "content_type": 1,
+    "object_id": "1",
+    "object_repr": "Видеоигры",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 2,
+  "fields": {
+    "action_time": "2023-10-24T16:45:03.474",
+    "user": 1,
+    "content_type": 2,
+    "object_id": "1",
+    "object_repr": "Шутер",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 3,
+  "fields": {
+    "action_time": "2023-10-24T16:45:10.763",
+    "user": 1,
+    "content_type": 4,
+    "object_id": "1",
+    "object_repr": "catalog/1644927302_45-fikiwiki-com-p-fortnait-krasivie-kartinki-46_6DcrP9x.jpg",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 4,
+  "fields": {
+    "action_time": "2023-10-24T16:45:35.358",
+    "user": 1,
+    "content_type": 3,
+    "object_id": "1",
+    "object_repr": "Item object (1)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 5,
+  "fields": {
+    "action_time": "2023-10-24T16:46:00.315",
+    "user": 1,
+    "content_type": 1,
+    "object_id": "2",
+    "object_repr": "Настольные игры",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 6,
+  "fields": {
+    "action_time": "2023-10-24T16:46:07.740",
+    "user": 1,
+    "content_type": 2,
+    "object_id": "2",
+    "object_repr": "РПГ",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 7,
+  "fields": {
+    "action_time": "2023-10-24T16:46:26.412",
+    "user": 1,
+    "content_type": 2,
+    "object_id": "3",
+    "object_repr": "Стратегия",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 8,
+  "fields": {
+    "action_time": "2023-10-24T16:46:32.467",
+    "user": 1,
+    "content_type": 2,
+    "object_id": "4",
+    "object_repr": "Приключение",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 9,
+  "fields": {
+    "action_time": "2023-10-24T16:46:42.854",
+    "user": 1,
+    "content_type": 2,
+    "object_id": "5",
+    "object_repr": "Экшен",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 10,
+  "fields": {
+    "action_time": "2023-10-24T16:46:47.750",
+    "user": 1,
+    "content_type": 4,
+    "object_id": "2",
+    "object_repr": "catalog/5202.970_qCODsuS.jpg",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 11,
+  "fields": {
+    "action_time": "2023-10-24T16:46:54.820",
+    "user": 1,
+    "content_type": 4,
+    "object_id": "3",
+    "object_repr": "catalog/758ba3605c42b85d5462b4c7781b692b_MQOBS79.jpg",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 12,
+  "fields": {
+    "action_time": "2023-10-24T16:47:00.960",
+    "user": 1,
+    "content_type": 4,
+    "object_id": "4",
+    "object_repr": "catalog/img_VkDvCbv.jpeg",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 13,
+  "fields": {
+    "action_time": "2023-10-24T16:47:06.615",
+    "user": 1,
+    "content_type": 4,
+    "object_id": "5",
+    "object_repr": "catalog/Warcraft_III_The_Frozen_Throne_Cover_bD8AA5F.jpg",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 14,
+  "fields": {
+    "action_time": "2023-10-24T16:47:49.057",
+    "user": 1,
+    "content_type": 3,
+    "object_id": "2",
+    "object_repr": "Item object (2)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 15,
+  "fields": {
+    "action_time": "2023-10-24T16:48:31.942",
+    "user": 1,
+    "content_type": 3,
+    "object_id": "3",
+    "object_repr": "Item object (3)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 16,
+  "fields": {
+    "action_time": "2023-10-24T16:49:02.441",
+    "user": 1,
+    "content_type": 3,
+    "object_id": "4",
+    "object_repr": "Item object (4)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 17,
+  "fields": {
+    "action_time": "2023-10-24T16:49:36.089",
+    "user": 1,
+    "content_type": 3,
+    "object_id": "5",
+    "object_repr": "Item object (5)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 18,
+  "fields": {
+    "action_time": "2023-10-31T10:56:40.023",
+    "user": 1,
+    "content_type": 3,
+    "object_id": "1",
+    "object_repr": "Item object (1)",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u041e\\u043f\\u0443\\u0431\\u043b\\u0438\\u043a\\u043e\\u0432\\u0430\\u043d\\u043d\\u044b\\u0439 \\u043d\\u0430 \\u0433\\u043b\\u0430\\u0432\\u043d\\u043e\\u0439 \\u0441\\u0442\\u0440\\u0430\\u043d\\u0438\\u0446\\u0435\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 19,
+  "fields": {
+    "action_time": "2023-10-31T11:03:23.038",
+    "user": 1,
+    "content_type": 1,
+    "object_id": "2",
+    "object_repr": "Настольные игры",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u041e\\u043f\\u0443\\u0431\\u043b\\u0438\\u043a\\u043e\\u0432\\u0430\\u043d\\u043e\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 20,
+  "fields": {
+    "action_time": "2023-10-31T11:12:05.590",
+    "user": 1,
+    "content_type": 2,
+    "object_id": "5",
+    "object_repr": "Экшен",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u041e\\u043f\\u0443\\u0431\\u043b\\u0438\\u043a\\u043e\\u0432\\u0430\\u043d\\u043e\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 21,
+  "fields": {
+    "action_time": "2023-10-31T11:18:56.686",
+    "user": 1,
+    "content_type": 1,
+    "object_id": "2",
+    "object_repr": "Настольные игры",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u041e\\u043f\\u0443\\u0431\\u043b\\u0438\\u043a\\u043e\\u0432\\u0430\\u043d\\u043e\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 22,
+  "fields": {
+    "action_time": "2023-10-31T11:20:36.563",
+    "user": 1,
+    "content_type": 4,
+    "object_id": "6",
+    "object_repr": "/media/catalog/a4b9d9402abf58405c5a9e5f21a1b48d.jpg",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 23,
+  "fields": {
+    "action_time": "2023-10-31T11:21:07.893",
+    "user": 1,
+    "content_type": 3,
+    "object_id": "6",
+    "object_repr": "Item object (6)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 24,
+  "fields": {
+    "action_time": "2023-10-31T11:39:51.167",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "1",
+    "object_repr": "/media/catalog/a4b9d9402abf58405c5a9e5f21a1b48d_3N77cKT.jpg",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 25,
+  "fields": {
+    "action_time": "2023-10-31T11:39:59.042",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "2",
+    "object_repr": "/media/catalog/unnamed.png",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 26,
+  "fields": {
+    "action_time": "2023-10-31T11:40:07.018",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "3",
+    "object_repr": "/media/catalog/unnamed_1.png",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 27,
+  "fields": {
+    "action_time": "2023-10-31T12:11:16.726",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "3",
+    "object_repr": "/media/catalog/unnamed_1.png",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Item\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 28,
+  "fields": {
+    "action_time": "2023-10-31T12:11:20.811",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "2",
+    "object_repr": "/media/catalog/unnamed.png",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Item\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 29,
+  "fields": {
+    "action_time": "2023-10-31T12:11:24.405",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "1",
+    "object_repr": "/media/catalog/a4b9d9402abf58405c5a9e5f21a1b48d_3N77cKT.jpg",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Item\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 30,
+  "fields": {
+    "action_time": "2023-10-31T18:26:11.052",
+    "user": 1,
+    "content_type": 1,
+    "object_id": "3",
+    "object_repr": "new cate",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 31,
+  "fields": {
+    "action_time": "2023-11-01T18:35:17.989",
+    "user": 1,
+    "content_type": 3,
+    "object_id": "2",
+    "object_repr": "Warcraft3: Frozen Throne",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0422\\u0435\\u043a\\u0441\\u0442\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 32,
+  "fields": {
+    "action_time": "2023-11-01T18:40:07.277",
+    "user": 1,
+    "content_type": 3,
+    "object_id": "2",
+    "object_repr": "Warcraft3: Frozen Throne",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 33,
+  "fields": {
+    "action_time": "2023-11-01T18:41:10.067",
+    "user": 1,
+    "content_type": 3,
+    "object_id": "2",
+    "object_repr": "Warcraft3: Frozen Throne",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 34,
+  "fields": {
+    "action_time": "2023-11-01T18:48:51.031",
+    "user": 1,
+    "content_type": 3,
+    "object_id": "2",
+    "object_repr": "Warcraft3: Frozen Throne",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 35,
+  "fields": {
+    "action_time": "2023-11-03T21:53:41.926",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "3",
+    "object_repr": "/media/catalog/images/unnamed_1.png",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 36,
+  "fields": {
+    "action_time": "2023-11-03T21:53:45.622",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "2",
+    "object_repr": "/media/catalog/images/unnamed.png",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 37,
+  "fields": {
+    "action_time": "2023-11-03T21:53:48.508",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "1",
+    "object_repr": "/media/catalog/images/a4b9d9402abf58405c5a9e5f21a1b48d_3N77cKT.jpg",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 38,
+  "fields": {
+    "action_time": "2023-11-03T21:54:33.606",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "8",
+    "object_repr": "/media/catalog/images/2023/11/03/a4b9d9402abf58405c5a9e5f21a1b48d_3N77cKT.jpg",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 39,
+  "fields": {
+    "action_time": "2023-11-03T21:54:40.762",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "9",
+    "object_repr": "/media/catalog/images/2023/11/03/unnamed.png",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 40,
+  "fields": {
+    "action_time": "2023-11-03T21:54:47.527",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "10",
+    "object_repr": "/media/catalog/images/2023/11/03/unnamed_1.png",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 1,
+  "fields": {
+    "name": "Can add категория",
+    "content_type": 1,
+    "codename": "add_category"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 2,
+  "fields": {
+    "name": "Can change категория",
+    "content_type": 1,
+    "codename": "change_category"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 3,
+  "fields": {
+    "name": "Can delete категория",
+    "content_type": 1,
+    "codename": "delete_category"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 4,
+  "fields": {
+    "name": "Can view категория",
+    "content_type": 1,
+    "codename": "view_category"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 5,
+  "fields": {
+    "name": "Can add тег",
+    "content_type": 2,
+    "codename": "add_tag"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 6,
+  "fields": {
+    "name": "Can change тег",
+    "content_type": 2,
+    "codename": "change_tag"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 7,
+  "fields": {
+    "name": "Can delete тег",
+    "content_type": 2,
+    "codename": "delete_tag"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 8,
+  "fields": {
+    "name": "Can view тег",
+    "content_type": 2,
+    "codename": "view_tag"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 9,
+  "fields": {
+    "name": "Can add товар",
+    "content_type": 3,
+    "codename": "add_item"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 10,
+  "fields": {
+    "name": "Can change товар",
+    "content_type": 3,
+    "codename": "change_item"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 11,
+  "fields": {
+    "name": "Can delete товар",
+    "content_type": 3,
+    "codename": "delete_item"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 12,
+  "fields": {
+    "name": "Can view товар",
+    "content_type": 3,
+    "codename": "view_item"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 13,
+  "fields": {
+    "name": "Can add изображение",
+    "content_type": 4,
+    "codename": "add_mainimage"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 14,
+  "fields": {
+    "name": "Can change изображение",
+    "content_type": 4,
+    "codename": "change_mainimage"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 15,
+  "fields": {
+    "name": "Can delete изображение",
+    "content_type": 4,
+    "codename": "delete_mainimage"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 16,
+  "fields": {
+    "name": "Can view изображение",
+    "content_type": 4,
+    "codename": "view_mainimage"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 17,
+  "fields": {
+    "name": "Can add log entry",
+    "content_type": 5,
+    "codename": "add_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 18,
+  "fields": {
+    "name": "Can change log entry",
+    "content_type": 5,
+    "codename": "change_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 19,
+  "fields": {
+    "name": "Can delete log entry",
+    "content_type": 5,
+    "codename": "delete_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 20,
+  "fields": {
+    "name": "Can view log entry",
+    "content_type": 5,
+    "codename": "view_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 21,
+  "fields": {
+    "name": "Can add permission",
+    "content_type": 6,
+    "codename": "add_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 22,
+  "fields": {
+    "name": "Can change permission",
+    "content_type": 6,
+    "codename": "change_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 23,
+  "fields": {
+    "name": "Can delete permission",
+    "content_type": 6,
+    "codename": "delete_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 24,
+  "fields": {
+    "name": "Can view permission",
+    "content_type": 6,
+    "codename": "view_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 25,
+  "fields": {
+    "name": "Can add group",
+    "content_type": 7,
+    "codename": "add_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 26,
+  "fields": {
+    "name": "Can change group",
+    "content_type": 7,
+    "codename": "change_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 27,
+  "fields": {
+    "name": "Can delete group",
+    "content_type": 7,
+    "codename": "delete_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 28,
+  "fields": {
+    "name": "Can view group",
+    "content_type": 7,
+    "codename": "view_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 29,
+  "fields": {
+    "name": "Can add user",
+    "content_type": 8,
+    "codename": "add_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 30,
+  "fields": {
+    "name": "Can change user",
+    "content_type": 8,
+    "codename": "change_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 31,
+  "fields": {
+    "name": "Can delete user",
+    "content_type": 8,
+    "codename": "delete_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 32,
+  "fields": {
+    "name": "Can view user",
+    "content_type": 8,
+    "codename": "view_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 33,
+  "fields": {
+    "name": "Can add content type",
+    "content_type": 9,
+    "codename": "add_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 34,
+  "fields": {
+    "name": "Can change content type",
+    "content_type": 9,
+    "codename": "change_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 35,
+  "fields": {
+    "name": "Can delete content type",
+    "content_type": 9,
+    "codename": "delete_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 36,
+  "fields": {
+    "name": "Can view content type",
+    "content_type": 9,
+    "codename": "view_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 37,
+  "fields": {
+    "name": "Can add session",
+    "content_type": 10,
+    "codename": "add_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 38,
+  "fields": {
+    "name": "Can change session",
+    "content_type": 10,
+    "codename": "change_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 39,
+  "fields": {
+    "name": "Can delete session",
+    "content_type": 10,
+    "codename": "delete_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 40,
+  "fields": {
+    "name": "Can view session",
+    "content_type": 10,
+    "codename": "view_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 41,
+  "fields": {
+    "name": "Can add kv store",
+    "content_type": 11,
+    "codename": "add_kvstore"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 42,
+  "fields": {
+    "name": "Can change kv store",
+    "content_type": 11,
+    "codename": "change_kvstore"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 43,
+  "fields": {
+    "name": "Can delete kv store",
+    "content_type": 11,
+    "codename": "delete_kvstore"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 44,
+  "fields": {
+    "name": "Can view kv store",
+    "content_type": 11,
+    "codename": "view_kvstore"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 45,
+  "fields": {
+    "name": "Can add изображение",
+    "content_type": 12,
+    "codename": "add_image"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 46,
+  "fields": {
+    "name": "Can change изображение",
+    "content_type": 12,
+    "codename": "change_image"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 47,
+  "fields": {
+    "name": "Can delete изображение",
+    "content_type": 12,
+    "codename": "delete_image"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 48,
+  "fields": {
+    "name": "Can view изображение",
+    "content_type": 12,
+    "codename": "view_image"
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$600000$5ujjimd5UNSPpZ3aALz10X$XU5yiBPFIHeDvmrrkgSrIfVAGdWOSJ1uqPe+CYATPt8=",
+    "last_login": "2023-11-03T21:48:30.617",
+    "is_superuser": true,
+    "username": "TekatoKiary",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2023-10-24T16:44:12.537",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 1,
+  "fields": {
+    "app_label": "catalog",
+    "model": "category"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 2,
+  "fields": {
+    "app_label": "catalog",
+    "model": "tag"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 3,
+  "fields": {
+    "app_label": "catalog",
+    "model": "item"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 4,
+  "fields": {
+    "app_label": "catalog",
+    "model": "mainimage"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 5,
+  "fields": {
+    "app_label": "admin",
+    "model": "logentry"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 6,
+  "fields": {
+    "app_label": "auth",
+    "model": "permission"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 7,
+  "fields": {
+    "app_label": "auth",
+    "model": "group"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 8,
+  "fields": {
+    "app_label": "auth",
+    "model": "user"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 9,
+  "fields": {
+    "app_label": "contenttypes",
+    "model": "contenttype"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 10,
+  "fields": {
+    "app_label": "sessions",
+    "model": "session"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 11,
+  "fields": {
+    "app_label": "thumbnail",
+    "model": "kvstore"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 12,
+  "fields": {
+    "app_label": "catalog",
+    "model": "image"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "eavheema8xiqb5sqdmpncs05g36ogcpo",
+  "fields": {
+    "session_data": ".eJxVjDkOwjAURO_iGlle8EZJzxmiv9g4gGwpS4W4O4mUApop5r2ZtxhgXeqwznkaRhYXocXpt0OgZ2474Ae0e5fU2zKNKHdFHnSWt875dT3cv4MKc93WEG0mxLKldkhozoYCOO0TeauZvU0RrCsphOCDU6xMVK4ggTNacxSfL_mQN80:1qyBeR:8mFOAhFE-pM2vaM0IvEvT-m9LbvHCB051HgcA2pn_Bc",
+    "expire_date": "2023-11-15T13:52:55.465"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "f900mg1mude9elcdq4k7m5y84gjggixf",
+  "fields": {
+    "session_data": ".eJxVjDkOwjAURO_iGlle8EZJzxmiv9g4gGwpS4W4O4mUApop5r2ZtxhgXeqwznkaRhYXocXpt0OgZ2474Ae0e5fU2zKNKHdFHnSWt875dT3cv4MKc93WEG0mxLKldkhozoYCOO0TeauZvU0RrCsphOCDU6xMVK4ggTNacxSfL_mQN80:1qyzDa:A6J2n8WOWVg_brXV7uWpYYVsWLIuIbRRbmaX9EJTB_8",
+    "expire_date": "2023-11-17T21:48:30.694"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||0a327e5a961fd57b099064e008f7b52a",
+  "fields": {
+    "value": "{\"name\": \"cache/63/b6/63b6757d91a60a60567008403bdcc06a.jpg\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [300, 169]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||0a4e4c0ee19f304f19006638c00495a9",
+  "fields": {
+    "value": "{\"name\": \"cache/92/7c/927ce712e56235ab4faa88bda4311e13.jpg\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [50, 28]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||18da6b00db4a9d705f26ece672e526be",
+  "fields": {
+    "value": "{\"name\": \"catalog/main_images/img_VkDvCbv.jpeg\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [1920, 1080]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||1a14de476c7366276b81111f2a313238",
+  "fields": {
+    "value": "{\"name\": \"catalog/Warcraft_III_The_Frozen_Throne_Cover_bD8AA5F.jpg\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [1200, 1600]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||1a32f5c4ae42bb15bcc02d70e28fb24d",
+  "fields": {
+    "value": "{\"name\": \"cache/92/74/9274b15ff59e917c1a43d325c447e69e.jpg\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [38, 50]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||1f405814d9429336fcb08032325eb1b2",
+  "fields": {
+    "value": "{\"name\": \"catalog/main_images/a4b9d9402abf58405c5a9e5f21a1b48d.jpg\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [512, 512]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||2fa7d78164a0cfb78e7833aefd690bfd",
+  "fields": {
+    "value": "{\"name\": \"cache/fa/ee/faee42511e527410615da591ec507884.jpg\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [300, 300]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||379bdff1f0489f0cf0adc97f92482252",
+  "fields": {
+    "value": "{\"name\": \"cache/df/5d/df5d436ed0d2f75949217805ceaed5fc.jpg\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [300, 300]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||3fdbfd2f8e60dc2c0f4a4fe7d7bacc8b",
+  "fields": {
+    "value": "{\"name\": \"cache/c9/bf/c9bf9b360382ea04dbfe9e132243e4b0.jpg\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [50, 28]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||5dcb9efa66f2ec60a5c4d69a33f1e957",
+  "fields": {
+    "value": "{\"name\": \"cache/f1/63/f163fe7c9c3e454ed6a5beda96d0d400.jpg\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [225, 300]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||7241ab56e542c4f8560915199e2b2f9c",
+  "fields": {
+    "value": "{\"name\": \"catalog/main_images/1644927302_45-fikiwiki-com-p-fortnait-krasivie-kartinki-46_6DcrP9x.jpg\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [1920, 1080]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||883c713bb48c14d1e51cd10cb8368782",
+  "fields": {
+    "value": "{\"name\": \"catalog/img_VkDvCbv.jpeg\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [1920, 1080]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||91bfbbe124f4b708ec5ec306646a06ea",
+  "fields": {
+    "value": "{\"name\": \"catalog/main_images/Warcraft_III_The_Frozen_Throne_Cover_bD8AA5F.jpg\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [1200, 1600]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||93dd79e8bbabc6da5cbcc7e88c19b50d",
+  "fields": {
+    "value": "{\"name\": \"catalog/1644927302_45-fikiwiki-com-p-fortnait-krasivie-kartinki-46_6DcrP9x.jpg\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [1920, 1080]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||9924a8fbe3ceff4c9e46ed1240dd6dab",
+  "fields": {
+    "value": "{\"name\": \"catalog/main_images/5202.970_qCODsuS.jpg\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [970, 970]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||9afdab7eb9bdbb426efd03d000de42b3",
+  "fields": {
+    "value": "{\"name\": \"cache/47/f8/47f8a539e36d83803dcf27b66ee4e02f.jpg\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [50, 50]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||a496f5ec781cf3409f60c560a962b27a",
+  "fields": {
+    "value": "{\"name\": \"catalog/5202.970_qCODsuS.jpg\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [970, 970]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||c68a41e5ab5d5e8e8d0b8af0ffc0efa6",
+  "fields": {
+    "value": "{\"name\": \"catalog/main_images/758ba3605c42b85d5462b4c7781b692b_MQOBS79.jpg\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [1920, 1080]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||cfafc6508e277eb435c22753aedd9aac",
+  "fields": {
+    "value": "{\"name\": \"cache/ac/b4/acb48934744271bc300354558c4ce741.jpg\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [50, 50]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||d0f230b31cee03e85cfc043375401b7c",
+  "fields": {
+    "value": "{\"name\": \"cache/bc/d4/bcd4dd9f96349dba56d32af8e1c0142e.jpg\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [300, 169]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||d61c929648ccf421e1bbac205c4164fb",
+  "fields": {
+    "value": "{\"name\": \"cache/45/c7/45c767104b922530ce280daf2b97cc43.jpg\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [50, 28]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||dc1ccd516e2b6cd6341b5ee112b03241",
+  "fields": {
+    "value": "{\"name\": \"catalog/a4b9d9402abf58405c5a9e5f21a1b48d.jpg\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [512, 512]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||f1f36a512897ec1af7ae52a488c85a61",
+  "fields": {
+    "value": "{\"name\": \"catalog/758ba3605c42b85d5462b4c7781b692b_MQOBS79.jpg\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [1920, 1080]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||image||fb8fb70692064dd1731320c144d18bd0",
+  "fields": {
+    "value": "{\"name\": \"cache/b5/f2/b5f27861ca715f677819d3e73a1291ee.jpg\", \"storage\": \"django.core.files.storage.filesystem.FileSystemStorage\", \"size\": [300, 169]}"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||thumbnails||18da6b00db4a9d705f26ece672e526be",
+  "fields": {
+    "value": "[\"3fdbfd2f8e60dc2c0f4a4fe7d7bacc8b\"]"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||thumbnails||1a14de476c7366276b81111f2a313238",
+  "fields": {
+    "value": "[\"5dcb9efa66f2ec60a5c4d69a33f1e957\"]"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||thumbnails||1f405814d9429336fcb08032325eb1b2",
+  "fields": {
+    "value": "[\"9afdab7eb9bdbb426efd03d000de42b3\"]"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||thumbnails||7241ab56e542c4f8560915199e2b2f9c",
+  "fields": {
+    "value": "[\"0a4e4c0ee19f304f19006638c00495a9\"]"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||thumbnails||883c713bb48c14d1e51cd10cb8368782",
+  "fields": {
+    "value": "[\"d0f230b31cee03e85cfc043375401b7c\"]"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||thumbnails||91bfbbe124f4b708ec5ec306646a06ea",
+  "fields": {
+    "value": "[\"1a32f5c4ae42bb15bcc02d70e28fb24d\"]"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||thumbnails||93dd79e8bbabc6da5cbcc7e88c19b50d",
+  "fields": {
+    "value": "[\"0a327e5a961fd57b099064e008f7b52a\"]"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||thumbnails||9924a8fbe3ceff4c9e46ed1240dd6dab",
+  "fields": {
+    "value": "[\"cfafc6508e277eb435c22753aedd9aac\"]"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||thumbnails||a496f5ec781cf3409f60c560a962b27a",
+  "fields": {
+    "value": "[\"2fa7d78164a0cfb78e7833aefd690bfd\"]"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||thumbnails||c68a41e5ab5d5e8e8d0b8af0ffc0efa6",
+  "fields": {
+    "value": "[\"d61c929648ccf421e1bbac205c4164fb\"]"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||thumbnails||dc1ccd516e2b6cd6341b5ee112b03241",
+  "fields": {
+    "value": "[\"379bdff1f0489f0cf0adc97f92482252\"]"
+  }
+},
+{
+  "model": "thumbnail.kvstore",
+  "pk": "sorl-thumbnail||thumbnails||f1f36a512897ec1af7ae52a488c85a61",
+  "fields": {
+    "value": "[\"fb8fb70692064dd1731320c144d18bd0\"]"
+  }
+}
+]

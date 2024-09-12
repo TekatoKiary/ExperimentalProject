@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block content %}
+{% load static %}
+<form class="col-md-7 col-lg-8 text-white" enctype="multipart/form-data" method="POST">
+    {% csrf_token %}
+    <div>
+        {{ user_form.as_div }}
+        {{ profile_form.as_div }}
+    </div>
+    <br>
+    <button class="w-25 btn btn-primary btn-lg ms-4" type="submit">
+        Сохранить
+    </button>
+    <br><br>
+</form>
+<div class="col-md-7 col-lg-8" >
+    <button class=" w-25 btn btn-primary btn-lg ms-4" onclick="location.href='{% url 'homepage:coffee' %}'">
+        Выпить кофе
+    </button>
+</div>
+{% endblock %}

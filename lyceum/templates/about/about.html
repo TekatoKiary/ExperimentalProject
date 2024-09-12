@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block content %}
+{% load static %}
+<div class="container col-xxl-8 px-2 py-5">
+    <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+        <div class="col-10 col-sm-8 col-lg-6">
+            <img src="{% static 'img/about.png' %}" width="600" height="400" loading="lazy">
+        </div>
+        <div class="col-lg-6">
+            <h1 class="display-5 fw-bold text-white">О проекте</h1>
+            <p class="text-light">
+                Знакомьтесь это 'The Games', интернет-магазин.
+                Предназначен он не только для любителей видеоигр, но и для любителей настольных игр.
+                Здесь Вы можете купить от топ-новинки до старых ностальгирующих игр.
+                Чего же Вы ждете? Переходите в каталог и выбирайте игру. Наслаждайтесь игровым процессом!
+            </p>
+        </div>
+    </div>
+</div>
+{% endblock %}

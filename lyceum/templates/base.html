@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ru">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% if title %}
+    <title>{{ title }}</title>
+    {% else %}
+    <title>The Games</title>
+    {% endif %}
+    <link rel="icon" href="{% static 'img/favicon.ico' %}" type="image/x-icon">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+</head>
+<body class="bg-dark">
+{% include "includes/header.html" %}
+<main>
+    {% block content %}Контента не будет({% endblock %}
+</main>
+{% include "includes/footer.html" %}
+</body>
+</html>

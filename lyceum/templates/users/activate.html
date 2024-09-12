@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block content %}
+<form method="post" class="col-md-7 col-lg-8 text-white" enctype="multipart/form-data"
+      action="{% url 'homepage:home' %}">
+    {% csrf_token %}
+    {% if is_accept %}
+    <h1 class="g-5 py-5 px-4">Активация пользователя прошла успешно</h1>
+    <h4 class="mb-3 g-5 py-5 px-4">Пользователь активирован.</h4>
+    {% else %}
+    <h1 class="g-5 py-5 px-4">Активация пользователя не прошла успешно</h1>
+    <h4 class="mb-3 g-5 py-5 px-4">Пользователь не активирован, так как просрочен срок действия ссылки активации.</h4>
+    {% endif%}
+    <button class="w-25 btn btn-primary btn-lg ms-4" type="submit">Перейти на главное меню</button>
+</form>
+{% endblock %}

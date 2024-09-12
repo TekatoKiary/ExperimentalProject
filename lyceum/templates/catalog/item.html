@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block content %}
+{% load static %}
+<div class="container col-xxl-8 px-4 py-5">
+    <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+        <div class="col-10 col-sm-8 col-lg-6">
+            <img src="{{ item.main_image.get_image_300x300.url }}" width="600" height="400" loading="lazy">
+        </div>
+        <div class="col-lg-6">
+            <strong class="d-inline-block mb-2 text-light">{{ item.category.name }}</strong>
+            <h1 class="display-4 fw-bold text-white">{{ item.name }}</h1>
+            <p class="lead mb-4 text-light">
+                {{ item.text }}
+            </p>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                <button type="button" class="btn btn-primary btn-lg px-4 me-sm-3">
+                    Купить
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,52 @@
+{% load static %}
+{% load i18n %}
+<link rel="stylesheet" href="{% static 'css/header_style.css' %}">
+{% with request.resolver_match.view_name as view_name %}
+<header class="p-3 nav_container text-white">
+    <div class="container">
+        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+            <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+                <img class="logo" src="{% static 'img/logo.png' %}" width="150">
+            </a>
+
+            <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                <li><a class="nav-link px-2 {% if view_name == 'homepage:home' %}active{% else %}text-white{% endif %}"
+                       href="{% url 'homepage:home' %}">{% translate 'Главная' %}</a></li>
+                <li>
+                    <a class="nav-link px-2 {% if view_name == 'catalog:catalog' %}active{% else %}text-white{% endif %}"
+                       href="{% url 'catalog:catalog' %}">{% translate 'Список товаров' %}</a></li>
+                <li><a class="nav-link px-2 {% if view_name == 'about:about' %}active{% else %}text-white{% endif %}"
+                       href="{% url 'about:about' %}">{% translate 'О проекте' %}</a></li>
+                <li>
+                    <a class="nav-link px-2 {% if view_name == 'feedback:feedback' %}active{% else %}text-white{% endif %}"
+                       href="{% url 'feedback:feedback'%}">Обратная Связь</a></li>
+                {% if user.is_authenticated %}
+                <li>
+                    <a class="nav-link px-2 {% if view_name == 'users:profile' %}active{% else %}text-white{% endif %}"
+                       href="{% url 'users:profile'%}">Профиль</a></li>
+                {% endif %}
+                {% if request.user.is_superuser %}
+                <li><a class="nav-link px-2 text-white" href="/admin">Админка</a></li>
+                {% endif %}
+            </ul>
+            <div class="text-end">
+                {% if not user.is_authenticated %}
+                <button type="button" class="btn btn-outline-light me-2"
+                        onclick="location.href='{% url 'users:login' %}'">
+                    Логин
+                </button>
+                <button type="button" class="btn btn-primary" onclick="location.href='{% url 'users:register' %}'">
+                    Регистрация
+                </button>
+                {% else %}
+                <a class="me-2 text-white">Пользователь: {{ user.username }}</a>
+                <button type="button" class="btn btn-primary" onclick="location.href='{% url 'users:logout' %}'">
+                    Выйти
+                </button>
+                {% endif %}
+            </div>
+        </div>
+
+    </div>
+</header>
+{% endwith %}

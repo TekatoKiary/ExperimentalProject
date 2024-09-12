@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block content %}
+<br>
+<div class="d-grid gap-2 d-md-flex justify-content-md-start">
+    <button type="button" class="btn btn-primary btn-lg px-4 me-sm-3"
+            onclick="location.href='{% url 'catalog:new_items' %}'">
+        Новинки
+    </button>
+    <button type="button" class="btn btn-primary btn-lg px-4 me-sm-3"
+            onclick="location.href='{% url 'catalog:friday' %}'">
+        Пятница
+    </button>
+    <button type="button" class="btn btn-primary btn-lg px-4 me-sm-3"
+            onclick="location.href='{% url 'catalog:unverified' %}'">
+        Непроверенные
+    </button>
+</div>
+<br>
+<div class="row mb-2">
+    {% for item in items %}
+    {% ifchanged item.category %}
+    <div class="flex-lg-row-reverse align-items-center g-5 py-5 px-4">
+        <h1 class="display-4 fw-bold text-white">{{ item.category }}</h1>
+        <br>
+    </div>
+    {% endifchanged %}
+    {% include "includes/item_card.html" %}
+    {% endfor %}
+</div>
+{% endblock %}

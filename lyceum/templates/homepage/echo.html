@@ -1,0 +1,10 @@
+<form method="post" action="{% url 'homepage:echo_submit' %}">
+    {% csrf_token %}
+    <h1 class="mb-3 g-5 py-5 px-4">Echo</h1>
+    <ul>
+        {{ echo_form.as_ul }}
+    </ul>
+    <button type="submit">
+        Отправить
+    </button>
+</form>

@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block content %}
+<form method="post" class="col-md-7 col-lg-8 text-white" enctype="multipart/form-data" action="/auth/login/">
+    {% csrf_token %}
+    <h1 class="g-5 py-5 px-4">Восстановление пароля завершено</h1>
+    <h4 class="mb-3 g-5 py-5 px-4">Ваш пароль был сохранен. Теперь вы можете войти.</h4>
+    <button class="w-25 btn btn-primary btn-lg ms-4" type="submit">Войти</button>
+</form>
+{% endblock %}

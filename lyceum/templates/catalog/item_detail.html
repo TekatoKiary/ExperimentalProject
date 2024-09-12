@@ -1,0 +1,70 @@
+{% extends "base.html" %}
+{% block content %}
+{% load static %}
+<script src="{% static 'js/bootstrap.bundle.js' %}"></script>
+<div class="container col-xxl-8 px-4 py-5">
+    <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+        <div class="col-10 col-sm-8 col-lg-6">
+            <img src="{{ item.main_image }}" width="600" height="400" loading="lazy">
+            <br>
+            <br>
+            {% if item.main_image.image %}
+            <a type="button" class="btn btn-outline-secondary btn-lg px-4"
+                        href="{% url 'download:download' item.main_image.image %}">
+                    Скачать картинку
+                </a>
+            {% endif %}
+        </div>
+        <div class="col-lg-6">
+            <strong class="d-inline-block mb-2 text-light">{{ item.category }}</strong>
+            <h1 class="display-4 fw-bold text-white">{{ item.name }}</h1>
+            <div class="mb-1 text-light">
+                Теги:
+                {% for tag in item.tags.all %}
+                {% if forloop.last %}
+                {{ tag }}
+                {% else %}
+                {{ tag }},
+                {% endif %}
+                {% endfor %}
+            </div>
+            <p class="lead mb-4 text-light">{{ item.text }}</p>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                <button type="button" class="btn btn-primary btn-lg px-4 me-sm-3">
+                    Купить
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+{% if images %}
+<div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-label="Slide 1"
+                aria-current="true"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2" class=""></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3" class=""></button>
+    </div>
+    <div class="carousel-inner">
+        {% for image in images.all %}
+        <div class="carousel-item {% if forloop.first %}active{% endif %}">
+            <svg class="bd-placeholder-img" xmlns="http://www.w3.org/2000/svg"
+                 aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+                <center>
+                    <img src="{{ image }}">
+                </center>
+            </svg>
+        </div>
+        {% endfor %}
+        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</div>
+{% endif %}
+{% endblock %}

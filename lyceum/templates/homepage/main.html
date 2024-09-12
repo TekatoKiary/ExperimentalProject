@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% block content %}
+{% load static %}
+<div class="container col-xxl-8 px-4 py-5">
+    <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+        <div class="col-10 col-sm-8 col-lg-6">
+            <img src="{% static 'img/animals.png' %}" width="600" height="400" loading="lazy">
+        </div>
+        <div class="col-lg-6">
+            <h1 class="display-4 fw-bold text-white">The Games</h1>
+            <p class="lead mb-4 text-light">
+                Один из самых любимых мест среди сообществ геймеров и любителей настольных игр.
+                Здесь есть любая игра на любой вкус клиента: от долгого построения стратегий до безбашенного экшена.
+            </p>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                <button type="button" class="btn btn-primary btn-lg px-4 me-sm-3"
+                        onclick="location.href='{% url 'catalog:catalog' %}'">
+                    Каталог
+                </button>
+                <button type="button" class="btn btn-outline-secondary btn-lg px-4"
+                        onclick="location.href='{% url 'about:about' %}'">
+                    О проекте
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="flex-lg-row-reverse align-items-center g-5 py-5 px-4">
+    <h1 class="display-4 fw-bold text-white">Главные хиты</h1>
+</div>
+<div class="g-5 py-5 px-4"><br>
+    <div class="row mb-2">
+        {% for item in items %}
+        {% include "includes/item_card.html" %}
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}
